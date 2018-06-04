@@ -1,7 +1,7 @@
 const Chance = require("chance");
 const chance = new Chance();
 const faker = require("faker");
-const { conn, Student, Campus } = require("./server/db");
+const { db, Student, Campus } = require("./server/db");
 
 //returns array of promises for use in Promise.all below
 const create = (n, func) => {
@@ -108,7 +108,7 @@ const students = [
   }
 ]
 
-conn
+db
   .sync({ force: true })
   .then(() => {
     return Promise.all(campuses.map(campus => Campus.create(campus)));
@@ -117,6 +117,6 @@ conn
     return Promise.all(students.map(student => Student.create(student)));
   })
   .finally(() => {
-    conn.close();
+    db.close();
     return null;
   });

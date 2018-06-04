@@ -91,14 +91,6 @@ const students = [
     campusId: 2
   },
   {
-    firstName: "E.T.",
-    lastName: "the friendly alien",
-    email: "et@nasa.com",
-    gpa: chance.floating({ min: 2, max: 4, fixed: 2 }),
-    imageUrl: `/images/database/${allStudents[3]}.jpg`,
-    campusId: 3
-  },
-  {
     firstName: "Murphy",
     lastName: "Cooper",
     email: "mc@nasa.com",

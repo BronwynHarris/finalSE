@@ -4,7 +4,7 @@ import { NavLink, withRouter } from 'react-router-dom';
 const Nav = () => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-nav" id='nav'>
     <NavLink className="navbar-brand" to='/'>
-     Home
+      {/* <img src='/images/astronaut2.jpg' style={{width: '100px'}} /> */}
     </NavLink>
     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />

@@ -19,9 +19,9 @@ const Students = ({ students }) => {
     <div>
       <div className='header row'>
         <h1>All Students</h1>
-        <Link to='/addstudent'><button className='btn btn-outline-primary'>Add Student</button></Link>
       </div>
       <StudentItem students={ students } />
+      <Link to='/addstudent'><button className='btn btn-primary'>Add Student</button></Link>
     </div>
   );
 };

@@ -12,7 +12,7 @@ body {
   width: 50vw;
 }
 
-#myVideo {
+/* #myVideo {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -20,7 +20,7 @@ body {
   min-height: 100%;
   overflow: hidden;
   z-index: -100;
-}
+} */
 
 #main {
   background-size: cover;
@@ -37,14 +37,6 @@ body {
 #transfer {
   height: 50vh;
   width: 50vw;
-}
-
-#footer {
-  height: 100%;
-  text-align: center;
-  background: rgba(0,0,0,.5);;
-  color: white;
-  margin-top: 100px;
 }
 
 #student-campus-dropdown {

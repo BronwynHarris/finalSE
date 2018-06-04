@@ -19,8 +19,8 @@ const Campuses = ({ campuses, students, del }) => {
     <div>
       <div className='header'>
         <h1>All Campuses</h1>
-        <Link to='/addcampus'><button className='btn btn-outline-primary'>Add Campus</button></Link>
       </div>
+      <Link to='/addcampus'><button className='btn btn-primary'>Add Campus</button></Link>
       <div className='row justify-content-center'>
         <CampusItem campuses={ campuses } students={ students } del={ del } />
       </div>

@@ -21,8 +21,8 @@ const Campus = ({ campus, del, campusStudents, studentsNotOnCampus }) => {
           <p><strong>City: </strong>{ campus.city }</p>
           <p><strong>Planet: </strong>{ campus.planet }</p>
           <p>{ campus.description }</p>
-          <Link to={`/editcampus/${campus.id}`}><button className='btn btn-outline-primary'>Edit</button></Link>
-          <button className='button-margin btn btn-outline-danger' onClick={ () => del(campus.name) }>Delete</button>
+          <Link to={`/editcampus/${campus.id}`}><button className='btn btn-primary'>Edit</button></Link>
+          <button className='button-margin btn btn-danger' onClick={ () => del(campus.name) }>Delete</button>
         </div>
       </div>
       <div className='row'>
@@ -35,12 +35,12 @@ const Campus = ({ campus, del, campusStudents, studentsNotOnCampus }) => {
               pathname: '/addstudent',
               state: { campus }
             }}>
-              <button className='btn btn-outline-primary'>
+              <button className='btn btn-primary'>
                 Add New Student
               </button>
             </Link>
             <Link to={`/transfer/${campus.id}`}>
-              <button className='button-margin btn btn-outline-success'>
+              <button className='button-margin btn btn-success'>
               Transfer Multiple Students
               </button>
             </Link>
